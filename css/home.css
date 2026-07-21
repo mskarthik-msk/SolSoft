@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navi{
+    height: 50px;
+    width: 100%;
+    background-color: #0554F2;
+    display: flex;
+    color: aliceblue;
+    position: relative;
+    z-index: 1;
+}
+.navi_p{
+    margin-left: 35%;
+    padding: 15px;
+}
+.navi_a{
+    color: aliceblue;
+    text-decoration: none;
+    margin-left: 22%;
+    padding: 15px;
+}
+.nav{
+    display: flex;
+}   
+.navi1{
+    background-color: #0554F2;
+    height: 75px;
+    width: 450px;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 90% 100%, 100% 0%);
+    position: relative;
+}
+.navi2{
+    background-color: #24272c62;
+    height: 75px;
+    width: 120px;
+    margin-left: -5%;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 62% 100%, 100% 0%);
+    margin-left: 350px;
+    position: absolute;
+}
+.navi3{
+    height: 75px;
+    position: absolute;
+    display: flex;
+    margin-left: 35%;
+}
+.navi3 a{
+    margin-top: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+.navi3 a img{
+    margin-top: -15px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 30px;
+    border: solid 1px #0554F2;
+}
+.home_btn2{
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    background-color: #0554F2;
+    color: aliceblue;
+    border: none;
+    width: 150px;
+}
+.logo1{
+    margin-top: -15px;
+    margin-left: 22%;
+    display: flex;
+    position: relative;
+}
+#hm{
+    width: 100%;
+}
