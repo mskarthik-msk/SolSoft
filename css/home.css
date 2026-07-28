@@ -77,7 +77,6 @@ background-color: #EFF4FA;
 .logo1{
     top: 35px;
     margin-left: 8%;
-    /* display: flex; */
     position: absolute;
     
 }
@@ -114,9 +113,6 @@ background-color: #EFF4FA;
     display: flex;
     aspect-ratio: 13/9;
     overflow-x: auto;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0, 0, 0.25);
 }
 .slide-nav{
     display: grid;
@@ -147,7 +143,7 @@ background-color: #EFF4FA;
     position: absolute;
 }
 .card{
-    width: 400px;
+    width: 350px;
     height: 350px;
     background-color: white;
     border-radius: 10px;
@@ -155,17 +151,34 @@ background-color: #EFF4FA;
     padding: 40px;
     transition: 0.3s ease-in-out;
 }
+.C{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: #0554F2 solid 8px;
+    opacity: 0.5;
+    margin: -175px 0 0 300px;
+    transition: 0.3s ease;
+    background-color: white;
+    clip-path: polygon(100% 45%, 0% 0%, 0% 0%, 100% 0%);
+    transform: rotate(205deg);
+}
 #cardi{
     transition: 0.3s ease-in-out;
     /* transform: rotate(0deg); */
 }
 .card:hover{
     /* transform: rotate(360deg); */
-    width: 410px;
+    width: 360px;
     height: 360px;
     margin: 5px;
     #cardi{
         transform: rotatey(180deg);
+    }
+    .C{
+        width: 155px;
+        height: 155px;
+        opacity: 1;
     }
 }
 .card h2{
@@ -314,15 +327,19 @@ background-color: #EFF4FA;
     display: flex;
 }
 .tabout7 i{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
     font-size: 25px;
     color: #0554F2;
     border-radius: 50%;
     border:#0554F2 solid 2px;
     padding: 15px 13px 15px 13px;
+    margin-top: 30px;
 }
 .tabout7 p{
     font-size: 17px;
-    margin: 8px 0 0 15px;
+    margin: 40px 0 0 15px;
 }
 
 
