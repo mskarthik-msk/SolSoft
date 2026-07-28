@@ -72,8 +72,8 @@
     width: 150px;
 }
 .logo1{
-    top: -15px;
-    margin-left: 22%;
+    top: 35px;
+    margin-left: 8%;
     /* display: flex; */
     position: absolute;
     
@@ -81,45 +81,66 @@
 .slide-baner{
     position: relative;
     max-width: 100%;
-    /* margin: 0 auto; */
+}
+.txt_con{
+    top: 20%;
+    left: 15%;
+    position: absolute;
+    color: white;
+    width: 36%;
+}
+.txt_con a{
+    margin: 40px 0 20px 0;
+    font-size: 100px;
+    font-weight: bolder;
+}
+.txt_con p{
+    margin: 30px 0 20px 0;
+}
+.txt_con button{
+    margin: 20px 0 20px 0;
+}
+.ban{
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
 }
 .baner{
     display: flex;
-    aspect-ratio: 15/9;
+    aspect-ratio: 13/9;
     overflow-x: auto;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0, 0, 0.25);
-    border-radius: 40px;
 }
 .slide-nav{
     display: flex;
-    /* row-gap: 1rem; */
     position: absolute;
     bottom: 50%;
     left: 1%;
-    transform: translateY(-50%);
-    /* z-index: 1; */
 }
 .slide-nav a{
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
-    background-color: rgb(19, 14, 6);
-    /* opacity: 0.75; */
+    background-color: white;
     margin: 10px;
-    transition: 0.3s ease;
 }
 .slide-nav a:hover{
-    background-color: aliceblue;
-    opacity: 1;
+    width: 1.3rem;
+    height: 1.3rem;
+    border: rgb(19, 14, 6) solid 0.2rem ;
+    background-color: white;
+    margin: 10px;
 }
 
 
 
-.about{
+.abt{
     display: flex;
-    padding-left: 50px;
+    padding-left: 30px;
     background-color: #EFF4FA;
 }
 .cont1{
@@ -128,42 +149,49 @@
     flex-wrap: wrap;
     vertical-align: top;
     display: grid;
-    grid-template-columns: 1fr 1.1fr;
-    /* grid-template-rows: auto auto; */
-    max-width: 100%;
 }
 #iAbt{
     padding: 10px;
 }
 .iabout3{
     object-fit: cover;
-    grid-column: 1;
+    grid-column: 1 / span1;
     grid-row: 1;
 }
 .iabout2{
     object-fit: cover;
-    grid-column: 1/ span2;
+    grid-column: 1;
     grid-row: 2;
+    margin-top: -200px;
+    margin-right: -100px;
 }
 .iabout1{
     object-fit: cover;
+    grid-row: 1 ;
     grid-column: 2;
-    grid-row: 1 / span 2;
     border-radius: 12px;
+    margin-right: -10px;
 }
 .iaboutI{
     background-color: white;
     width: 180px;
     height: 180px;
     border-radius: 10px;
-    display: flex;
-    position: relative;
+    position: absolute;
+    align-items: center;
+    margin-top: 150px;
+    left: 220px
 }
 .iabout4{
-    
+    height: 70px;
+    width: 60px;
+    line-height: 70px;
+    margin-left: 27%;
+    object-fit: contain;
 }
 .iabout5{
-
+    font-size: 45px;
+    margin-left: 10px;
 }
 .cont2{
     width: 45%;
@@ -340,7 +368,7 @@
 }
 .footer{
     width: 100%;
-    height: 550px;
+    height: 500px;
     background-color: #03041C;
     display: flex;
 }
@@ -351,16 +379,23 @@
 }
 .footer .f1 .one{
     width: 25%;
-    /* margin-bottom: 100px; */
-    /* display: grid; */
 }
 .footer .f1 .two{
-    display: block;
     width: 35%;
 }
-.footer .f1 .three{
-    display: block;
-    width: 40%;
+.footer .f1 .two div{
+    display: flex;
+}
+.footer .f1 .two div p{
+    color: white;
+    margin: 5px 0 0 10px;
+}
+.footer .f1 .two div a{
+    color: #3c79f1;
+}
+.footer .f1 .two div img{
+    margin: 0 10px 20px 0;
+    border-radius: 10px;
 }
 .footer .f1 label{
     color: white;
@@ -377,8 +412,11 @@
     display: block;
     font-weight: 100;
 }
-.footer .f1 i{
-    /* margin: 10px 0px 10px 20px; */
+.footer .f1 .three div{
+    display: flex;
+    margin-top: 20px;
+}
+.footer .f1 .three i{
     flex-wrap: wrap;
     line-height: 40px;
     height: 40px;
@@ -390,12 +428,25 @@
     background-color: #EFF4FA;
     border-radius: 100px;
 }
-.footer .f1 .for_p{
+.footer .f1 .three p{
+    display: inline-block;
     width: 200px;
-}
-.footer .f1 p{
     color: #EFF4FA;
-    flex-wrap: wrap;
-    display: block;
     font-weight: 100;
+    margin-left: 20px;
+}
+.foot_bar{
+    display: flex;
+    background-color: #03041C;
+    color: #EFF4FA;
+    height: 60px;
+    padding: 20px 0 0 80px;
+}
+.foot_bar div{
+    margin-left: 40%;
+}
+.foot_bar a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #EFF4FA;
 }
