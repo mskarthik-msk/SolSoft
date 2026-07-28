@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+background-color: #EFF4FA;
+}
 .nav{
     height: 50px;
     width: 100%;
@@ -116,7 +119,7 @@
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0, 0, 0.25);
 }
 .slide-nav{
-    display: flex;
+    display: grid;
     position: absolute;
     bottom: 50%;
     left: 1%;
@@ -137,11 +140,47 @@
 }
 
 
+.cards{
+    width: 90%;
+    display: flex;
+    margin: -300px 0 0 100px;
+    position: absolute;
+}
+.card{
+    width: 400px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 40px;
+    transition: 0.3s ease-in-out;
+}
+#cardi{
+    transition: 0.3s ease-in-out;
+    /* transform: rotate(0deg); */
+}
+.card:hover{
+    /* transform: rotate(360deg); */
+    width: 410px;
+    height: 360px;
+    margin: 5px;
+    #cardi{
+        transform: rotatey(180deg);
+    }
+}
+.card h2{
+    padding: 40px 0 20px 0;
+}
+.card p{
+    color: #999EA7;
+}
+
 
 .abt{
     display: flex;
     padding-left: 30px;
-    background-color: #EFF4FA;
+    
+    margin-top: 200px;
 }
 .cont1{
     width: 45%;
@@ -254,15 +293,20 @@
 }
 .tabout6{
     font-size: 18px;
-    margin: 15px 15px 15px 0;
+    margin: 50px 15px 15px 0;
     padding: 0px 40px 0px 40px;
-    /* height: 10; */
+    height: 60px;
     border: solid 1px #0554F2;
     color: #0554F2;
     background-color: white;
     border-radius: 8px;
-    /* clip-path:polygon(0 0,100% 0,0 100%); */
-    /* clip-path: polygon(0% 0%, 100% 0%, 10% 90%, 100% 100%, 0% 100%); */
+    transition: color 0.3s ease;
+}
+.tabout6:hover{
+    transition: 0.3s;
+    background-color: #0554F2;
+    color: white;
+    
 }
 .tabout7{
     padding: 15px 40px 15px 40px;
