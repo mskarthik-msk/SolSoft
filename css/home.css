@@ -160,15 +160,15 @@ background-color: #EFF4FA;
     margin: -175px 0 0 300px;
     transition: 0.3s ease;
     background-color: white;
-    clip-path: polygon(100% 45%, 0% 0%, 0% 0%, 100% 0%);
+    /* clip-path: ellipse(40% 50% at 50% 50%); */
+    /* clip-path: circle(50% at center); */
+    clip-path: polygon(100% 45%, 0% 0%, 10% 0%, 100% 0%);
     transform: rotate(205deg);
 }
 #cardi{
     transition: 0.3s ease-in-out;
-    /* transform: rotate(0deg); */
 }
 .card:hover{
-    /* transform: rotate(360deg); */
     width: 360px;
     height: 360px;
     margin: 5px;
@@ -368,6 +368,14 @@ background-color: #EFF4FA;
     position: absolute;
     left: 50px;
     top: 30px;
+}
+.Ufooter .Uf1 .one div{
+    width: 40px;
+    height: 40px;
+    background-color: #626978;
+    margin: 90px 0 0 40px;
+    position: absolute;
+    
 }
 .Ufooter .Uf1 .two{
     border-radius: 0 0 10px 10px;
